@@ -1,15 +1,16 @@
 {
   "name": "cherry-component",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "up": "taze major -I",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "pinia": "^2.0.35",
@@ -18,12 +19,16 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@iconify/json": "^2.2.61",
     "@types/node": "^20.1.0",
     "@unocss/eslint-config": "^0.51.12",
     "@unocss/reset": "^0.50.8",
     "@vitejs/plugin-vue": "^4.2.1",
     "eslint": "^8.38.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
     "pnpm": "^8.4.0",
     "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.62.1",
@@ -32,6 +37,9 @@
     "unocss": "^0.50.8",
     "vite": "^4.3.5",
     "vue-tsc": "^1.6.4"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   },
   "eslintConfig": {
     "extends": [
