@@ -1,7 +1,7 @@
 import { resolve } from 'node:path'
 import { defineConfig, loadEnv } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Unocss from 'unocss/vite'
+import vue from '@vitejs/plugin-vue'
+import unocss from 'unocss/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
@@ -16,9 +16,9 @@ export default defineConfig(({ mode }) => {
       },
     },
     plugins: [
-      Vue(),
+      vue(),
       // https://github.com/unocss/unocss
-      Unocss(), // uno.config.ts
+      unocss(), // uno.config.ts
       visualizer({
         open: true,
         gzipSize: true,

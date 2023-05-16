@@ -25,7 +25,6 @@
     "@unocss/reset": "^0.50.8",
     "@vitejs/plugin-vue": "^4.2.1",
     "eslint": "^8.38.0",
-    "husky": "^8.0.0",
     "lint-staged": "^13.2.2",
     "pnpm": "^8.4.0",
     "rollup-plugin-visualizer": "^5.9.0",

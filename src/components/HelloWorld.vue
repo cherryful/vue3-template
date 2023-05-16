@@ -1,9 +1,13 @@
+<script setup lang="ts">
+import Button from './Button.vue'
+</script>
+
 <template>
   <div class="m-5">
     <RouterLink to="/">
-      <button class="btn">
+      <Button type="warning">
         Back Demo Page
-      </button>
+      </Button>
     </RouterLink>
   </div>
 </template>

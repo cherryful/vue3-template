@@ -9,7 +9,18 @@ import {
 
 import { colors } from 'unocss/preset-mini'
 
+const types = ['primary', 'secondary', 'accent', 'success', 'info', 'warning', 'error']
+const nums = ['100', '200', '300', '400', '500', '600', '700', '800']
+const sizes = ['sm', 'md', 'lg', 'full']
+
 export default defineConfig({
+  safelist: [
+    ...types.map(t => nums.map(n => `bg-${t}-${n}`)).flat(),
+    ...types.map(t => nums.map(n => `border-${t}-${n}`)).flat(),
+    ...types.map(t => nums.map(n => `text-${t}-${n}`)).flat(),
+    ...types.map(t => nums.map(n => `focus:ring-${t}-${n}`)).flat(),
+    ...sizes.map(s => `rounded-${s}`),
+  ],
   theme: {
     colors: {
       primary: colors.indigo,
@@ -21,9 +32,6 @@ export default defineConfig({
       error: colors.red,
     },
   },
-  shortcuts: [
-    ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer focus:outline-none focus:ring-offset-2 focus:ring-teal-500 hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
-  ],
   presets: [
     presetUno(),
     presetIcons(),
