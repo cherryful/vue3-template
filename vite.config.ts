@@ -17,7 +17,6 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       vue(),
-      // https://github.com/unocss/unocss
       unocss(), // uno.config.ts
       visualizer({
         open: true,

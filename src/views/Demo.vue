@@ -1,9 +1,8 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import Button from '@/components/Button.vue'
-
 import { useStore } from '@/store'
-import useMouseClick from '@/composables/useMouse'
+import useMouseClick from '@/composables/useMouseClick'
 import api from '@/api'
 
 const store = useStore()
@@ -23,11 +22,14 @@ onMounted(() => {
 
 <template>
   <div class="m-5 space-y-5">
-    <img src="@/assets/vue.svg" alt="vue">
+    <div class="flex items-center gap-4">
+      <span> assets </span>
+      <img src="@/assets/vue.svg" alt="vue">
+    </div>
 
     <div class="flex items-center gap-4">
       <span> iconify </span>
-      <div class="i-mdi:emoticon-happy-outline text-3xl text-yellow-500 hover:i-mdi:emoticon-happy-outline hover:text-red-500" />
+      <div class="i-mdi:emoticon-happy-outline hover:i-mdi:emoticon-happy-outline text-3xl text-yellow-500 hover:text-red-500" />
     </div>
 
     <div class="flex items-center gap-4">
@@ -46,30 +48,33 @@ onMounted(() => {
       </span>
     </div>
 
-    <div>
-      <RouterLink to="/hello">
+    <div class="flex items-center gap-4">
+      <RouterLink class="inline-block" to="/hello">
         <Button type="accent">
           To Hello Page
         </Button>
       </RouterLink>
+      <RouterLink class="inline-block" to="/404">
+        <Button type="error">
+          To 404 Page
+        </Button>
+      </RouterLink>
     </div>
 
-    <div>
-      <div class="inline-block border p-4">
-        useMouseClick hook
-        <p>
-          Mouse click x:
-          <span class="text-lg font-bold text-red-500">
-            {{ mouse.x }}
-          </span>
-        </p>
-        <p>
-          Mouse click y:
-          <span class="text-lg font-bold text-blue-500">
-            {{ mouse.y }}
-          </span>
-        </p>
-      </div>
+    <div class="inline-block border p-4">
+      useMouseClick hook
+      <p>
+        Mouse click x:
+        <span class="ml-2 text-lg font-bold text-red-500">
+          {{ mouse.x }}
+        </span>
+      </p>
+      <p>
+        Mouse click y:
+        <span class="ml-2 text-lg font-bold text-blue-500">
+          {{ mouse.y }}
+        </span>
+      </p>
     </div>
   </div>
 </template>

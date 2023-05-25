@@ -1,5 +1,7 @@
 # vue3-unocss-component-starter
 
+It doesn't need to be too complicated, simple is great.
+
 Features:
 
 - 🛠 [Vue 3](https://v3.vuejs.org/guide/introduction.html)
@@ -12,8 +14,8 @@ Features:
 - 📄 [Github pages action](https://pages.github.com)
 - 🦾 TypeScript
 - 🧲 Fetch API
-- ⭐️ Basic Components
-- [antfu/eslint-config](https://github.com/antfu/eslint-config)
+- [antfu/eslint-config](https://github.com/antfu/eslint-config) 
+- unocss/eslint-config
 
 ## Github pages
 
