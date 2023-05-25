@@ -23,23 +23,27 @@ onMounted(() => {
 <template>
   <div class="m-5 space-y-5">
     <div class="flex items-center gap-4">
-      <span> assets </span>
+      <span class="w-24"> assets </span>
       <img src="@/assets/vue.svg" alt="vue">
     </div>
 
     <div class="flex items-center gap-4">
-      <span> iconify </span>
+      <span class="w-24"> iconify </span>
       <div class="i-mdi:emoticon-happy-outline hover:i-mdi:emoticon-happy-outline text-3xl text-yellow-500 hover:text-red-500" />
     </div>
 
-    <div class="flex items-center gap-4">
-      <Button type="primary" @click="fetchSentence">
-        Fetch API
+    <div class="flex flex-wrap items-center gap-4">
+      <span class="w-24"> Fetch </span>
+      <Button @click="fetchSentence">
+        GET https://v1.hitokoto.cn?c=i
       </Button>
-      {{ sentence }}
+      <span>
+        {{ sentence }}
+      </span>
     </div>
 
     <div class="flex items-center gap-4">
+      <span class="w-24"> Pinia </span>
       <Button type="secondary" @click="store.increment">
         Increase Store Count
       </Button>
@@ -49,6 +53,7 @@ onMounted(() => {
     </div>
 
     <div class="flex items-center gap-4">
+      <span class="w-24"> Vue Router </span>
       <RouterLink class="inline-block" to="/hello">
         <Button type="accent">
           To Hello Page
