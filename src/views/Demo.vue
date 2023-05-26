@@ -64,6 +64,11 @@ onMounted(() => {
           To 404 Page
         </Button>
       </RouterLink>
+      <RouterLink class="inline-block" to="/unocss-ui">
+        <Button type="info">
+          unocss-ui
+        </Button>
+      </RouterLink>
     </div>
 
     <div class="inline-block border p-4">

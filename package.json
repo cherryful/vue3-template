@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "pinia": "^2.0.35",
+    "unocss-ui": "0.0.2-alpha.4",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
