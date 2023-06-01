@@ -13,8 +13,10 @@
     "prepare": "npx simple-git-hooks"
   },
   "dependencies": {
+    "@vueuse/components": "^10.1.2",
+    "@vueuse/core": "^10.1.2",
     "pinia": "^2.0.35",
-    "unocss-ui": "0.0.2-alpha.4",
+    "unocss-ui": "0.0.3-alpha.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
@@ -27,7 +29,7 @@
     "@vitejs/plugin-vue": "^4.2.1",
     "eslint": "^8.38.0",
     "lint-staged": "^13.2.2",
-    "pnpm": "^8.4.0",
+    "pnpm": "^8.6.0",
     "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.62.1",
     "simple-git-hooks": "^2.8.1",

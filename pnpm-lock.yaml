@@ -1,12 +1,22 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
+  '@vueuse/components':
+    specifier: ^10.1.2
+    version: 10.1.2(vue@3.2.47)
+  '@vueuse/core':
+    specifier: ^10.1.2
+    version: 10.1.2(vue@3.2.47)
   pinia:
     specifier: ^2.0.35
     version: 2.0.35(typescript@4.9.5)(vue@3.2.47)
   unocss-ui:
-    specifier: 0.0.2-alpha.4
-    version: 0.0.2-alpha.4
+    specifier: 0.0.3-alpha.1
+    version: 0.0.3-alpha.1
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -40,8 +50,8 @@ devDependencies:
     specifier: ^13.2.2
     version: 13.2.2
   pnpm:
-    specifier: ^8.4.0
-    version: 8.4.0
+    specifier: ^8.6.0
+    version: 8.6.0
   rollup-plugin-visualizer:
     specifier: ^5.9.0
     version: 5.9.0
@@ -888,8 +898,8 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@unocss-ui/components@0.0.1-alpha.8:
-    resolution: {integrity: sha512-voME1XfRpLhzgqgzi8QcCYiYGThfcIFbhr6/ptsMU6TBM4Qt5MsTwobq6BF5XHF5XaOLQEIFSPbLfe6CUHXeTw==}
+  /@unocss-ui/components@0.0.2-alpha.3:
+    resolution: {integrity: sha512-GOePWY3AZvDR/9gLCuWBc2MpEmoREw/Ij3dXZZAQ0ZVdA7KNpaIvYp6NVrFrPE9dYYf/yqN+eoDbGWf6beN6YA==}
     dependencies:
       '@vueuse/components': 10.1.2(vue@3.2.47)
       '@vueuse/core': 10.1.2(vue@3.2.47)
@@ -4061,8 +4071,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.4.0:
-    resolution: {integrity: sha512-oW5jpFgCmXHIVOU5HZLBWGBtCH7K4JSRdpk7/f+Dtp+KhUsX5NQaWzzYyU9TX7eAsfYMko179133gbUS+JTrMw==}
+  /pnpm@8.6.0:
+    resolution: {integrity: sha512-uMaWGXlvG+m5NIJaR4JEEenChbg+1AP4zVpqs4PEcZg4uH+lXMTd/X/lirKZA+TC0w0d+++y3btINcwyKsuwAA==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
@@ -4802,10 +4812,10 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /unocss-ui@0.0.2-alpha.4:
-    resolution: {integrity: sha512-ROsJQNyozkUMD4dYAe8m76Czym6vrvxXME6H7f5EXC2LGAL5Oq6Uorqo+f/X4mnNKirc+M/nNY8KWNG1sYsz7Q==}
+  /unocss-ui@0.0.3-alpha.1:
+    resolution: {integrity: sha512-0OrLJSQLFXwUUKIqLtPEieXvvNQIY5EYouDF/kYrr2Q20kTy/VxFzywi7H421UDbSdsZkWC9WplGtI8hu3h6cA==}
     dependencies:
-      '@unocss-ui/components': 0.0.1-alpha.8
+      '@unocss-ui/components': 0.0.2-alpha.3
       '@unocss-ui/preset': 0.0.1-alpha.3
     transitivePeerDependencies:
       - '@vue/composition-api'
