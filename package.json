@@ -40,7 +40,7 @@
     "vue-tsc": "^1.6.4"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,vue,md}": "eslint --fix"
+    "*.{js,ts,tsx,vue}": "eslint --fix"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

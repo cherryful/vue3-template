@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import Button from '@/components/Button.vue'
-import { useStore } from '@/store'
 import useMouseClick from '@/composables/useMouseClick'
 import api from '@/api'
+import { useStore } from '@/store'
 
 const store = useStore()
 const mouse = useMouseClick()
@@ -11,8 +11,7 @@ const mouse = useMouseClick()
 const sentence = ref('君子不器。')
 
 async function fetchSentence() {
-  const resp = await api.oneSentence()
-  sentence.value = resp.hitokoto
+  sentence.value = await api.oneSentence()
 }
 
 onMounted(() => {

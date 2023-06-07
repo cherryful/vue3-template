@@ -1,21 +1,15 @@
-# vue3-unocss-component-starter
+# vue3-starter
 
 It doesn't need to be too complicated, simple is great.
 
 Features:
 
-- 🛠 [Vue 3](https://v3.vuejs.org/guide/introduction.html)
-- ⚡️ [Vite](https://vitejs.dev/guide/)
-- 🗂 [PNPM](https://pnpm.io)
-- 🎨 [UnoCSS](https://github.com/antfu/unocss)
-- 🛣 [Vue Router](https://github.com/vuejs/vue-router-next)
-- 🍍 [Pinia](https://pinia.vuejs.org/)
-- 🔡 [Inter var font](https://rsms.me/inter/)
+- 🛠 [Vue 3](https://v3.vuejs.org/guide/introduction.html) + [Vite](https://vitejs.dev/guide/) + [Vue Router](https://github.com/vuejs/vue-router-next) + [Pinia](https://pinia.vuejs.org/) + [VueUse](https://vueuse.org/) + [PNPM](https://pnpm.io)
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) + ⭐ [UnoCSS UI](https://github.com/cherryful/unocss-ui) 
+- 🧹 [@antfu/eslint-config](https://github.com/antfu/eslint-config) + [@unocss/eslint-config](https://github.com/unocss/unocss/tree/main/packages/config), no Prettier
+- 🦾 TypeScript + Fetch API
 - 📄 [Github pages action](https://pages.github.com)
-- 🦾 TypeScript
-- 🧲 Fetch API
-- [antfu/eslint-config](https://github.com/antfu/eslint-config) 
-- unocss/eslint-config
+- 🫡 [simple-git-hooks](https://www.npmjs.com/package/simple-git-hooks) + [lint-staged](https://www.npmjs.com/package/lint-staged)
 
 ## Github pages
 
